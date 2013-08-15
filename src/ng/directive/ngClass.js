@@ -96,10 +96,10 @@ function classDirective(name, selector) {
  * @example Example that demostrates basic bindings via ngClass directive.
    <example>
      <file name="index.html">
-       <p ng-class="{strike: strike, bold: bold, red: red}">Map Syntax Example</p>
-       <input type="checkbox" ng-model="bold"> bold
-       <input type="checkbox" ng-model="strike"> strike
-       <input type="checkbox" ng-model="red"> red
+       <p ng-class="{'strike': isstrike, 'bold': isbold, 'red': isred}">Map Syntax Example</p>
+       <input type="checkbox" ng-model="isbold"> bold
+       <input type="checkbox" ng-model="isstrike"> strike
+       <input type="checkbox" ng-model="isred"> red
        <hr>
        <p ng-class="style">Using String Syntax</p>
        <input type="text" ng-model="style" placeholder="Type: bold strike red">
